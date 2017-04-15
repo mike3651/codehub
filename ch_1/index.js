@@ -91,7 +91,7 @@
 		var temp_str = "<p>The string contains unique characters? ";
 		for(var i = 0; i < str.length; i++) {
 			if(bool[str.charAt(i)]) {
-				$("#valid-string-output").html(temp_str + false + "</p>");
+				$("#valid-string-output").append(temp_str + false + "</p>");
 				return false;
 			}
 			bool[str.charAt(i)] = true;
