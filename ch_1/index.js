@@ -1,7 +1,12 @@
+(function() {
+
 window.onload = function() {
 	$("#unique-string").click(validate); 
 	$("#remove-from-string").click(removeDuplicates);
 	$("#check-anagrams").click(checkAnagram);
+	$(".fancybox").fancybox({
+		'transitionIn': 'elastic'
+	});
 }
 
 
@@ -64,3 +69,5 @@ function checkAnagram() {
 	$("#anagram-output").append("<p>\"" + first_temp + "\" and \"" 
 			+ second_temp + "\" are anagrams for each other</p>");
 }
+
+})();

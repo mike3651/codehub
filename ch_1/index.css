@@ -63,7 +63,7 @@ img, .button {
 }
 
 
-.button, .member-options {
+.button, .member-options, .fancybox {
 	transition: background linear 0.3s;
 }
 
@@ -75,13 +75,11 @@ img, .button {
 
 
 .member-options {
-	display: inline;
-	font-size: 18px;
-	padding: 10px;
+	display: inline;	
 	width: 120px;
 }
 
-.member-options:nth-of-type(1) {
+.member-options:nth-of-type(1), .fancybox {
 	background-color: grey;	
 }
 
@@ -98,8 +96,32 @@ img, .button {
 	cursor: pointer;
 }
 
-.button:hover, .member-options:hover {
+.button:hover, .member-options:hover, .fancybox:hover {
 	background-color: hotpink;
+}
+
+.fancybox, .member-options {
+	font-size: 18px;
+	padding: 10px;
+}
+
+/* styling for the fancy box */
+.fancybox {
+	float: right;
+	color: white;
+	text-decoration: none;
+}
+
+.fancybox-target {
+	display: none;
+	background-color: black;
+	color: orange;	
+	border: 1px solid white;
+	border-radius: 20px 20px 20px 20px;
+}
+
+.fancybox-target h2 {
+	text-align: center;
 }
 
 
