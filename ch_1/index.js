@@ -36,8 +36,8 @@
 		// find the min index	
 		i = 1;
 		for(; i < Object.keys(ranking).length; i++) {
-			console.log("comparing " + search_terms[min_index] + "[" + ranking[search_terms[min_index]] 
-				+ "] to " + search_terms[i] + "[" + ranking[search_terms[i]] + "]");			
+			console.log("comparing " + search_terms[min_index] + " => " + ranking[search_terms[min_index]] 
+				+ " to " + search_terms[i] + " => " + ranking[search_terms[i]]);			
 			if(ranking[search_terms[min_index]] > ranking[search_terms[i]]) {
 				min_index = i;
 			}
