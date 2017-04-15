@@ -9,6 +9,10 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.js"></script>
 
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One|Press+Start+2P" rel="stylesheet"> 
+
+
 	<!-- LINK TO THE CSS -->
 	<link rel="stylesheet" type="text/css" href="index.css">
 
@@ -18,8 +22,8 @@
 	<title>CTCI - chapter 1</title>
 </head>
 <body>
-	<div id="top">Code<span class="second-half">hub</span>		
-		<input placeholder="Search" id="search"/><label><img src="img/search.png" class="icon button"/></label>
+	<div id="top">Coders<span class="second-half">hub</span>		
+		<input placeholder="Search by problem type" id="search-query"/><label><img src="img/search.png" id="search" class="icon button"/></label>
 		<div class="member-options"><img src="img/upload.png" class="icon button member"/>Upload</div>
 		<div class="member-options"><img src="img/upgrade.png" class="icon button member"/>Upgrade</div>
 	</div>
@@ -41,51 +45,52 @@
 		<div class="add-info">The Master's theorem hates him!  <a href="https://www.facebook.com/jeho.yang.7?ref=br_rs">Find out why!</a></div>
 	</div>-->
 
+	<div id="string">
+		<!-- THIS IS FOR THE UNIQUE STRING VALIDATOR -->
+		<fieldset>
+			<legend>Check for a unique string</legend>
+			<input id="valid-string" type="text" placeholder="enter a string..."/><label id="unique-string"><img src="img/submit.png" class="icon button"/></label>
 
-	<!-- THIS IS FOR THE UNIQUE STRING VALIDATOR -->
-	<fieldset>
-		<legend>Check for a unique string</legend>
-		<input id="valid-string" type="text" placeholder="enter a string..."/><label id="unique-string"><img src="img/submit.png" class="icon button"/></label>
+			<!-- FANCY BOX -->
+			<a href="#fancybox-target-1" class="fancybox" id="1">Find out more!</a>
+			<div class="fancybox-target" id="fancybox-target-1">
+				<h2>The facts</h2>
+				<p>RT: &Theta;(n)</p>
+			</div>
 
-		<!-- FANCY BOX -->
-		<a href="#fancybox-target-1" class="fancybox" id="1">Find out more!</a>
-		<div class="fancybox-target" id="fancybox-target-1">
-			<h2>The facts</h2>
-			<p>RT: &Theta;(n)</p>
-		</div>
+			<div id="valid-string-output">
+			</div>
+		</fieldset>
+		
+		<!-- THIS REMOVES DUPLICATE CHARACTERS IN A STRING -->
+		<fieldset>
+			<legend>Removes duplicates</legend>
+			<input id="remove-string" type="text" placeholder="enter a string..."/><label id="remove-from-string"><img src="img/submit.png" class="icon button"/></label>
 
-		<div id="valid-string-output">
-		</div>
-	</fieldset>
-	
-	<!-- THIS REMOVES DUPLICATE CHARACTERS IN A STRING -->
-	<fieldset>
-		<legend>Removes duplicates</legend>
-		<input id="remove-string" type="text" placeholder="enter a string..."/><label id="remove-from-string"><img src="img/submit.png" class="icon button"/></label>
+			<a href="#fancybox-target-2" class="fancybox" id="2">Find out more!</a>
+			<div class="fancybox-target" id="fancybox-target-2">
+				<h2>The facts</h2>
+				<p>This algorithm is under the restriction of no buffer</p>
+				<p>RT: &Theta;(n<sup>2</sup>)</p>
+			</div>
 
-		<a href="#fancybox-target-2" class="fancybox" id="2">Find out more!</a>
-		<div class="fancybox-target" id="fancybox-target-2">
-			<h2>The facts</h2>
-			<p>This algorithm is under the restriction of no buffer</p>
-			<p>RT: &Theta;(n<sup>2</sup>)</p>
-		</div>
+			<div id="remove-string-output">			
+			</div>
 
-		<div id="remove-string-output">			
-		</div>
+		</fieldset>
 
-	</fieldset>
+		<!-- THIS CHECKS TO SEE IF TWO STRINGS ARE ANAGRAMS OF ONE ANOTHER -->
+		<fieldset>
+			<legend>Check Anagrams</legend>
+			<input id="anagram-a" type="text" placeholder="enter a string..."/><input id="anagram-b" type="text" placeholder="enter a string..."/><label id="check-anagrams"><img src="img/submit.png" class="icon button"/></label>
 
-	<!-- THIS CHECKS TO SEE IF TWO STRINGS ARE ANAGRAMS OF ONE ANOTHER -->
-	<fieldset>
-		<legend>Check Anagrams</legend>
-		<input id="anagram-a" type="text" placeholder="enter a string..."/><input id="anagram-b" type="text" placeholder="enter a string..."/><label id="check-anagrams"><img src="img/submit.png" class="icon button"/></label>
+			<!-- FANCY BOX -->
+			<a href="#fancybox-target-3" class="fancybox" id="3">Find out more!</a>
+			<div class="fancybox-target" id="fancybox-target-3"><p>There is some content here</p></div>
 
-		<!-- FANCY BOX -->
-		<a href="#fancybox-target-3" class="fancybox" id="3">Find out more!</a>
-		<div class="fancybox-target" id="fancybox-target-3"><p>There is some content here</p></div>
-
-		<div id="anagram-output"></div>
-	</fieldset>
+			<div id="anagram-output"></div>
+		</fieldset>
+	</div>
 
 </body>
 </html>

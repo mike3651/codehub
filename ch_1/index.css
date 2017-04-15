@@ -8,6 +8,7 @@ legend {
 body {
 	background:black;
 	color: white;
+	font-family: 'Poiret One'
 }
 
 ul {
@@ -25,7 +26,6 @@ h1 {
 
 #top {
 	font-size: 42px;
-	font-family: monospace;
 	padding: 3px;
 }
 
@@ -37,6 +37,7 @@ input{
 .second-half {
 	color: black;
 	border-radius: 11%;
+	border: outset;
 }
 
 img.icon, .button{
@@ -92,7 +93,7 @@ img, .button {
 }
 
 
-.button:hover, .link:hover, .member-options:hover {
+.button:hover, .link:hover, .member-options:hover, .second-half:hover {
 	cursor: pointer;
 }
 
@@ -113,6 +114,7 @@ img, .button {
 }
 
 .fancybox-target {
+	font-family: 'Press Start 2P';
 	display: none;
 	background-color: black;
 	color: orange;	
