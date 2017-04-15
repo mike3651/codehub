@@ -1,0 +1,146 @@
+/* Michael Wilson
+ * my styling sheet */
+
+legend {
+	color: orange;
+}
+
+body {
+	background:black;
+	color: white;
+}
+
+ul {
+	list-style-type: none;	
+}
+
+li {
+	display: inline;	
+	margin-right: 10%;
+}
+
+h1 {
+	text-align: center;
+}
+
+#top {
+	font-size: 42px;
+	font-family: monospace;
+	padding: 3px;
+}
+
+input{
+	height: 22px;
+	width: 20em;
+}
+
+.second-half {
+	color: black;
+	border-radius: 11%;
+}
+
+img.icon, .button{
+	border-radius: 0% 11% 11% 0%;
+}
+
+.second-half, img.icon, div.button {
+	padding: 5px;
+}
+
+img, .button {
+	vertical-align: bottom;
+}
+
+.icon, .button {
+	height: 20px;
+	width: 20px;
+	color: black;
+	display: inline-block;
+}
+
+.second-half, img.icon:not(.member), div.button, .member-options:nth-of-type(2) {
+	background-color: orange;
+}
+
+
+.button, .member-options {
+	transition: background linear 0.3s;
+}
+
+
+.bottom-top {
+	margin: auto;
+	text-align: center;
+}
+
+
+.member-options {
+	display: inline;
+	font-size: 18px;
+	padding: 10px;
+	width: 120px;
+}
+
+.member-options:nth-of-type(1) {
+	background-color: grey;	
+}
+
+.link {
+	transition: border-bottom linear 0.05s;
+}
+
+.link:hover {
+	border-bottom: 3px solid orange;
+}
+
+
+.button:hover, .link:hover, .member-options:hover {
+	cursor: pointer;
+}
+
+.button:hover, .member-options:hover {
+	background-color: hotpink;
+}
+
+
+/* STYLING FOR AN ADD
+
+#add-space {
+	right: 100px;
+	position: fixed;
+}
+
+.annoying-ad {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	margin: auto;
+	line-height: 195px;	
+	-webkit-animation: flash 0.1s infinite;
+}
+
+.annoying-ad img {
+	width: 190px;
+	height: 190px;	
+}
+
+.add-info {
+	font-family: "Comic Sans MS";
+	font-size: 20px;
+	width: 200px;
+	height: 150px;
+	border: solid 1px white;
+	background-color: lightblue;
+}
+
+@keyframes flash {
+	0% {
+		background-color: red;
+	}
+	50% {
+		background-color: yellow;
+	}
+	100% {
+		background-color: blue;
+	}
+}*/

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+	<!-- LINK TO JQUERY CDN -->
+	 <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+	<!-- LINK TO THE CSS -->
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+	<!-- LINK TO THE JAVASCRIPT -->
+	<script type="text/javascript" src="index.js"></script>
+
+	<title>CTCI - chapter 1</title>
+</head>
+<body>
+	<div id="top">Code<span class="second-half">hub</span>		
+		<input placeholder="Search" id="search"/><label><img src="img/search.png" class="icon button"/></label>
+		<div class="member-options"><img src="img/upload.png" class="icon button member"/>Upload</div>
+		<div class="member-options"><img src="img/upgrade.png" class="icon button member"/>Upgrade</div>
+	</div>
+	<div id="bottom-top">
+		<ul>
+			<li class="link">Home</li>
+			<li class="link">Videos</li>
+			<li class="link">Categories</li>
+			<li class="link">Premium</li>
+		</ul>
+	</div>
+	<h1>Welcome to the CTCI solutions web page!</h1>
+	
+	<!-- THIS IS A DIV FOR AN ADD 
+	<div id="add-space">
+		<div class="annoying-ad">
+			<img src="img/ad.png">
+		</div>
+		<div class="add-info">The Master's theorem hates him!  <a href="https://www.facebook.com/jeho.yang.7?ref=br_rs">Find out why!</a></div>
+	</div>-->
+
+
+	<!-- THIS IS FOR THE UNIQUE STRING VALIDATOR -->
+	<fieldset>
+		<legend>Check for a unique string</legend>
+		<input id="valid-string" type="text" placeholder="enter a string..."/><label id="unique-string"><img src="img/submit.png" class="icon button"/></label>
+	
+		<div id="valid-string-output">
+			<p>The algorithm here has a run time of &Theta;(n)</p>
+		</div>
+	</fieldset>
+	
+	<!-- THIS REMOVES DUPLICATE CHARACTERS IN A STRING -->
+	<fieldset>
+		<legend>Removes duplicates</legend>
+		<input id="remove-string" type="text" placeholder="enter a string..."/><label id="remove-from-string"><img src="img/submit.png" class="icon button"/></label>
+		<div id="remove-string-output">
+			<p>This algorithm is under the restriction of no buffer</p>
+			<p>The algorithm here has a run time of &Theta;(n<sup>2</sup>)</p>
+		</div>
+
+	</fieldset>
+
+	<!-- THIS CHECKS TO SEE IF TWO STRINGS ARE ANAGRAMS OF ONE ANOTHER -->
+	<fieldset>
+		<legend>Check Anagrams</legend>
+		<input id="anagram-a" type="text" placeholder="enter a string..."/><input id="anagram-b" type="text" placeholder="enter a string..."/><label id="check-anagrams"><img src="img/submit.png" class="icon button"/></label>
+		<div id="anagram-output"></div>
+	</fieldset>
+
+</body>
+</html>
