@@ -29,8 +29,11 @@ h1 {
 	padding: 3px;
 }
 
-input{
+input{	
 	height: 22px;
+
+	/* THIS STYLING IS USED FOR CHROME */
+	-webkit-logical-height: 24px;
 	width: 20em;
 }
 

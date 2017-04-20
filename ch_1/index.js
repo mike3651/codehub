@@ -10,8 +10,8 @@
 
 	var conversions = {
 		"Theta": "&Theta;",
-		"Omega": "Ω",
-		"pi": "π"
+		"Omega": "&Omega",
+		"pi": "&pi"
 	}
 
 	// CREATES A NODE 
@@ -83,7 +83,7 @@
 			if(conversions[words[i]] != null) {
 				words[i] = conversions[words[i]];				
 			}
-			alert(words[i]);
+			//alert(words[i]);
 		}
 		words = words.join(" ");		
 		$("#search-query").val(words);
