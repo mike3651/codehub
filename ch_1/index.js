@@ -5,6 +5,52 @@
 	// valid search terms
 	var search_terms = ["string", "array"];
 
+	// valid entities
+	//var entities = ["Theta", "Omega", "pi"]	// Enitity cap theta, Ω
+
+	var conversions = {
+		"Theta": "&Theta;",
+		"Omega": "Ω",
+		"pi": "π"
+	}
+
+	// CREATES A NODE 
+	function node(next, value){
+		this.next = next;
+		this.value = value;
+
+		// returns the next node
+		this.getNext = function() {
+			return next;
+		};
+
+		// returns the current value of this node
+		this.getValue = function() {
+			return value;
+		};
+	}
+
+	// CREATES A LINKED LIST
+	function linkedList(node) {
+		this.head = new node(null, null);
+
+		// adds a node to the list
+		this.addNode = function(data) {
+			var newNode = new node(null, data);
+			if(this.head.data == null) {
+				this.head = newNode;
+			}
+			var ptr = head;
+			while(ptr.next != null) {
+				ptr = ptr.next;
+			}
+			ptr.next = newNode;
+		}
+	}
+
+	// valid functions 
+	// var functions = ["partial-derivative", "square-root"] // ∂, √
+
 	window.onload = function() {
 		$("#unique-string").click(validate); 
 		$("#remove-from-string").click(removeDuplicates);
@@ -17,8 +63,30 @@
 
 	// finds the respective section that the user is searching for
 	function find() {
-		var query = $("#search-query").val();	
+		var query = $("#search-query").val();
+
+		// check to see if the query  contains special commands/characters
+		convert(query);
+		
+
 		findSimilar(query);
+	}
+
+	// return contains special commands or keywords ? true + value[s] : false
+	function convert(query) {
+		var words = query.split(" ");	// array of words in the query
+
+		// loop through all of query after it has been split
+		for(var i = 0; i < words.length; i++) {
+
+			// checks for the conversion and then replaces if needed
+			if(conversions[words[i]] != null) {
+				words[i] = conversions[words[i]];				
+			}
+			alert(words[i]);
+		}
+		words = words.join(" ");		
+		$("#search-query").val(words);
 	}
 
 	// function that finds out what the search query is similar to 
@@ -36,8 +104,11 @@
 		// find the min index	
 		i = 1;
 		for(; i < Object.keys(ranking).length; i++) {
+
+			// This is just used for tracking the similiarity in terms of the query
 			console.log("comparing " + search_terms[min_index] + " => " + ranking[search_terms[min_index]] 
-				+ " to " + search_terms[i] + " => " + ranking[search_terms[i]]);			
+				+ " to " + search_terms[i] + " => " + ranking[search_terms[i]]);	
+
 			if(ranking[search_terms[min_index]] > ranking[search_terms[i]]) {
 				min_index = i;
 			}
@@ -141,5 +212,7 @@
 		$("#anagram-output").append("<p>\"" + first_temp + "\" and \"" 
 				+ second_temp + "\" are anagrams for each other</p>");
 	}
+
+	
 
 })();
