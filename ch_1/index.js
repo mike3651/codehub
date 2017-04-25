@@ -52,6 +52,25 @@
 	// var functions = ["partial-derivative", "square-root"] // ∂, √
 
 	window.onload = function() {
+		// THIS IS JUST A TEST OF PERSISTANCE
+		/***********************************
+		 ** ALL OF THE STUFF HERE IS SPAM **
+		 ***********************************/
+		// $(document).mousemove(function(e) {
+		// 	var width = e.clientX, height = e.clientY;
+		// 	console.log("width: " + width + "\nheight: " + height);
+		// 	$("#add-space").css("left", width);
+		// 	$("#add-space").css("top", height);
+		// });
+
+		// $(document).click(function() {
+		// 	$("body").css("cursor", "grab");
+			
+		// 	setTimeout(function() {
+		// 		$("body").css("cursor", "pointer");
+		// 	}, 100);
+		// });
+
 		$("#unique-string").click(validate); 
 		$("#remove-from-string").click(removeDuplicates);
 		$("#check-anagrams").click(checkAnagram);
@@ -212,7 +231,4 @@
 		$("#anagram-output").append("<p>\"" + first_temp + "\" and \"" 
 				+ second_temp + "\" are anagrams for each other</p>");
 	}
-
-	
-
 })();

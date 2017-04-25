@@ -29,7 +29,7 @@ h1 {
 	padding: 3px;
 }
 
-input{	
+input{		
 	height: 22px;
 
 	/* THIS STYLING IS USED FOR CHROME */
@@ -87,8 +87,8 @@ img, .button {
 	background-color: grey;	
 }
 
-.link {
-	transition: border-bottom linear 0.05s;
+.link {	
+	transition: border-bottom linear 0.07s;
 }
 
 .link:hover {
@@ -170,4 +170,8 @@ img, .button {
 	100% {
 		background-color: blue;
 	}
+}
+
+body:hover {
+	cursor: pointer;
 }*/
